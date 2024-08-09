@@ -1,0 +1,287 @@
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Graviola';
+    src: url('fonts/Graviola-Regular.woff2') format('woff2'),
+         url('fonts/Graviola-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Brixton Line';
+    src: url('fonts/BrixtonLine-Regular.woff2') format('woff2'),
+         url('fonts/BrixtonLine-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body, h1, p, form, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif; /* Classic font for a modern feel */
+    color: #333;
+    line-height: 1.6;
+    background-image: url(./assets/road-trip-3469810.jpg);
+    background-size: cover;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+    background: rgba(83, 0, 0, 0.986);
+    border-bottom: 5px solid #580000;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+    justify-content: flex-end; /* Aligns the links to the right */
+    
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    
+}
+
+.navbar .logo {
+    margin-right: auto; /* Pushes the logo to the far left */
+}
+
+.navbar .logo img {
+    height: 155px; /* Increased size of the logo */
+}
+
+.about-section, .contact-section {
+    padding: 60px 20px;
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    background-position: center;
+    margin-top: 150px;
+}
+
+.about-section {
+    background-image: url('./assets/containers-8676518.jpg'); /* Path to your image */
+}
+
+.contact-section {
+    background-image: url('contact-background.jpg'); /* Path to your image */
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(224, 9, 9, 0); /* Slightly transparent background for form */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.contact-section label {
+    display: block;
+    margin: 10px 0 5px;
+    color: rgb(209, 209, 209);
+}
+
+.contact-section input, 
+.contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #252424;
+    border-radius: 15px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background: #490000;
+    color: white;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+.contact-section button:hover {
+    background: #000000;
+}
+
+footer {
+    background: #383838;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    color: #000000;
+}
+
+.footer-content a {
+    color: #fcfcfc;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-content a:hover {
+    text-decoration: underline;
+}
+
+.footer-content .fab {
+    font-size: 24px; /* Size of the icons */
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+h1, .contact-section h1 {
+    font-family: 'Belleza', serif; /* Use Belleza font */
+    color: #cdff19;
+    
+}
+
+/* Paytone Font for About Us Paragraph */
+.about-section p {
+    font-family: 'Paytone One', sans-serif; /* Use Paytone font */
+    font-size: large;
+}
+
+.about-section h1, .contact-section h1 {
+    border: 2px solid #75470e; /* Brown border color */
+    background-color: #795120; /* Solid brown background color */
+    color: white; /* Text color to contrast with the brown background */
+    padding: 10px;
+    border-radius: 5px; /* Optional: rounded corners */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.companyname {
+    color: #1ff326; /* Green color for the company name */
+}
+
+
+.contact-section h1 {
+    border-color: #744710; 
+    background-color: #724815; 
+}
+
+
+
+
+.contact-section input[type="text"], 
+.contact-section input[type="email"], 
+.contact-section textarea {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #6F4F28; /* Solid brown border color */
+    border-radius: 3px; /* Rounded corners */
+    background-color: white; /* Background color for input fields */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    font-size: 16px; /* Adjust font size if needed */
+}
+
+
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar .logo img {
+        height: 50px; /* Adjusted size for smaller screens */
+    }
+
+    .about-section, .contact-section {
+        padding: 40px 10px;
+    }
+
+    .contact-section form {
+        padding: 15px;
+    }
+
+    .contact-section input, 
+    .contact-section textarea {
+        font-size: 14px;
+    }
+
+    .contact-section button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        padding: 5px;
+    }
+
+    .navbar ul li {
+        margin: 5px 0;
+    }
+
+    .navbar .logo img {
+        height: 40px; /* Further adjusted size for very small screens */
+    }
+
+    .about-section, .contact-section {
+        padding: 30px 5px;
+    }
+
+    .contact-section form {
+        padding: 10px;
+    }
+
+    .contact-section input, 
+    .contact-section textarea {
+        font-size: 12px;
+    }
+
+    .contact-section button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}

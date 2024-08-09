@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Graviola:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Brixton+Line:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Belleza:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo"><img src="./assets/logo.png" alt="Aoki Logistics Logo"></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="about" class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to <span class="companyname">Aoki Logistics,</span> your premier logistics partner proudly rooted in Gauteng. We’re not just about moving goods; we’re about moving them with purpose and precision. Our expertise spans warehousing, transportation, and supply chain management, all driven by cutting-edge technology and a passion for excellence.
+
+            At <span class="companyname">Aoki Logistics,</span>, we believe that great logistics isn’t just about getting from point A to B , it’s about making the journey as seamless as possible. Our team of dedicated professionals combines deep local knowledge with innovative solutions to offer services that are not only reliable but also finely tuned to the unique needs of your business.
+            
+            We’re more than just a service provider; we’re your allies in navigating the complexities of logistics. With a relentless focus on accuracy and customer satisfaction, we’re here to ensure that every step of your logistics process is handled with care and expertise. Let’s transform your logistics challenges into opportunities for success, together.</p>
+    </section>
+    <section id="contact" class="contact-section">
+        <h1>For More Information, Write to Us</h1>
+        <form id="contact-form" action="process_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>Follow us on:
+                <a href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </p>
+            <p>Phone: 123-456-7890 | Registration Number: 12345678</p>
+            <p>&copy; 2024 Aoki Logistics. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
